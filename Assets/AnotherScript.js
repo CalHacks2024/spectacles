@@ -19,6 +19,7 @@ if (rightHand.isTracked() || leftHand.isTracked()) {
 var good = function () {
     print("gooooood");
     fetchCatFact();
+    adiAPICall();
 }
 
 function fetchCatFact() {
@@ -32,13 +33,31 @@ function fetchCatFact() {
     httpRequest.method = RemoteServiceHttpRequest.HttpRequestMethod.Get;
 
     script.remoteServiceModule.performHttpRequest(httpRequest, function (response) {
-        print('Response received: ' + response.body);
-
         if (response.statusCode === 200) {
             var data = JSON.parse(response.body);
             print('Random Cat Fact: ' + data.fact);
         } else {
             print('Failed to fetch cat fact. Status code: ' + response.statusCode);
+        }
+    });
+}
+
+function adiAPICall() {
+    if (!script.remoteServiceModule) {
+        print("RemoteServiceModule is not assigned!");
+        return;
+    }
+
+    var httpRequest = RemoteServiceHttpRequest.create();
+    httpRequest.url = 'https://racer-grateful-shepherd.ngrok-free.app/startAppointment';
+    httpRequest.method = RemoteServiceHttpRequest.HttpRequestMethod.Get;
+
+    script.remoteServiceModule.performHttpRequest(httpRequest, function (response) {
+        if (response.statusCode === 200) {
+            var data = JSON.parse(response.body);
+            print('Your appointment id: ' + data.appointment_id);
+        } else {
+            print('Failed to get appointment id: ' + response.statusCode);
         }
     });
 }
