@@ -1,6 +1,30 @@
-# Ignore temporary files
-*.tmp
-.DS_Store
-/build/
-/dist/
+# Ignore Lens Studio cache files and temporary files
+cache/
+support/
+pluginsUserPreferences/
 
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Node.js-related files if your project uses Node for scripts or automation
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore compiled TypeScript files if you're using TypeScript
+dist/
+build/
+*.js.map
+
+# Ignore any temporary files
+*.tmp
+*.log
+
+# Ignore user-specific preferences and settings
+*.userprefs
+*.preferences
+
+# Ignore hidden system files
+.idea/
+.vscode/
