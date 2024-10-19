@@ -24,6 +24,7 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    ColourPrefab: false
     remoteServiceModule: false
     text3DComponent: false
   ScriptTypesHidden:
@@ -31,6 +32,7 @@
   DefaultScriptInputs:
     - remoteServiceModule: !<reference.RemoteServiceModule> 013a0fae-65f1-453a-b0cc-d7c1cc79230d
       text3DComponent: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+      ColourPrefab: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
