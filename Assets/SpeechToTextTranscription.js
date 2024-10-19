@@ -2,6 +2,8 @@
 
 var options = VoiceML.ListeningOptions.create();
 
+var accumulatedTranscript = "";
+
 var onListeningEnabledHandler = function () {
     script.vmlModule.startListening(options);
   };
@@ -30,7 +32,9 @@ var onUpdateListeningEventHandler = function (eventArgs) {
     if (!eventArgs.isFinalTranscription) {
       return;
     }
+    accumulatedTranscript += eventArgs.transcription + ' ';
     print('Final Transcription: ' + eventArgs.transcription);
+    print('Accumulated Transcription: ' + accumulatedTranscript);
 };
 
 
@@ -48,6 +52,7 @@ options.languageCode = 'en_US';
 options.shouldReturnAsrTranscription = true;
 
 options.shouldReturnInterimAsrTranscription = true;
+options.shouldReturnAsrTranscription = true;
 
 
 
