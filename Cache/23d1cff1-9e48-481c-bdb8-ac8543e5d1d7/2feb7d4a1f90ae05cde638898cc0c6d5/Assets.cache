@@ -1,0 +1,15 @@
+- !<AssetCache/2feb7d4a-1f90-ae05-cde6-38898cc0c6d5>
+  AssetFiles:
+    ed87bf26-a381-4e12-89ca-db02cc75a709: 23d1cff1-9e48-481c-bdb8-ac8543e5d1d7/2feb7d4a1f90ae05cde638898cc0c6d5/Data/cat_param_02.pvr
+  AssetCurrentFiles:
+    ed87bf26-a381-4e12-89ca-db02cc75a709: 23d1cff1-9e48-481c-bdb8-ac8543e5d1d7/2feb7d4a1f90ae05cde638898cc0c6d5/Data/cat_param_02.pvr
+  Assets:
+    - !<FileTexture/ed87bf26-a381-4e12-89ca-db02cc75a709>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo/00000000-0000-0000-0000-000000000000>
+        Width: 512
+        Height: 512
+  SourceHash: 2feb7d4a1f90ae05cde638898cc0c6d5
+  FileHash: b0ddf12a98ba669a4a84f9516bf452ba
+  NativePackageItems:
+    []

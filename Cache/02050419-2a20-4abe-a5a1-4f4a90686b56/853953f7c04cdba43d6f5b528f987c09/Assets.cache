@@ -1,0 +1,15 @@
+- !<AssetCache/853953f7-c04c-dba4-3d6f-5b528f987c09>
+  AssetFiles:
+    b881e22d-c9ea-42a8-bd55-db6d1467948f: 02050419-2a20-4abe-a5a1-4f4a90686b56/853953f7c04cdba43d6f5b528f987c09/Data/coffee shop.jpeg
+  AssetCurrentFiles:
+    b881e22d-c9ea-42a8-bd55-db6d1467948f: 02050419-2a20-4abe-a5a1-4f4a90686b56/853953f7c04cdba43d6f5b528f987c09/Data/Performance/Medium/coffee shop.pvr
+  Assets:
+    - !<FileTexture/b881e22d-c9ea-42a8-bd55-db6d1467948f>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo/00000000-0000-0000-0000-000000000000>
+        Width: 600
+        Height: 600
+  SourceHash: 853953f7c04cdba43d6f5b528f987c09
+  FileHash: f858a61b4ee65104648aacfd71e12eca
+  NativePackageItems:
+    []

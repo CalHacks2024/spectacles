@@ -1,0 +1,18 @@
+- !<AssetCache/069d3c33-38d7-f8a4-e699-f5a54b37e42a>
+  AssetFiles:
+    b43e0386-4bf1-4a84-9811-328c6cd9c4dd: 29408c84-6467-4637-a3c2-6aadd798e2b7/069d3c3338d7f8a4e699f5a54b37e42a/Data/a-pose.mesh
+  AssetCurrentFiles:
+    {}
+  Assets:
+    - !<FileMesh/b43e0386-4bf1-4a84-9811-328c6cd9c4dd>
+      PackagePath: ""
+      Info: !<MeshInfo/00000000-0000-0000-0000-000000000000>
+        Triangles: 1232
+        Vertices: 1023
+        Blendshapes:
+          []
+        Joints: 78
+  SourceHash: 069d3c3338d7f8a4e699f5a54b37e42a
+  FileHash: f7ef936a57cc3077fe74214976c8ed43
+  NativePackageItems:
+    []

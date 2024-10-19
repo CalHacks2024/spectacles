@@ -1,0 +1,12 @@
+- !<AssetCache/8f370a77-2711-b863-2a10-af41852d7ba0>
+  AssetFiles:
+    b788cbaa-c1b9-4ec6-9238-fb34722ff6f1: 8893adb1-c0ab-47f4-9025-5c1051f407af/8f370a772711b8632a10af41852d7ba0/Data/CalibrationComplete.mp3
+  AssetCurrentFiles:
+    b788cbaa-c1b9-4ec6-9238-fb34722ff6f1: 8893adb1-c0ab-47f4-9025-5c1051f407af/8f370a772711b8632a10af41852d7ba0/Data/CalibrationComplete.mp3
+  Assets:
+    - !<FileAudioTrack/b788cbaa-c1b9-4ec6-9238-fb34722ff6f1>
+      PackagePath: ""
+  SourceHash: 8f370a772711b8632a10af41852d7ba0
+  FileHash: abd96bdf7d0f1768ec823c123330f6a9
+  NativePackageItems:
+    []

@@ -1,0 +1,15 @@
+- !<AssetCache/70b3c317-da06-4fea-4a54-503a431ee04d>
+  AssetFiles:
+    44ba4ac5-733b-4d02-8ec1-9436ecad93e7: a0a9bb87-ffc1-42b0-98cd-240a93531517/70b3c317da064fea4a54503a431ee04d/Data/groundIcon.png
+  AssetCurrentFiles:
+    44ba4ac5-733b-4d02-8ec1-9436ecad93e7: a0a9bb87-ffc1-42b0-98cd-240a93531517/70b3c317da064fea4a54503a431ee04d/Data/Size/Medium/groundIcon.png
+  Assets:
+    - !<FileTexture/44ba4ac5-733b-4d02-8ec1-9436ecad93e7>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo/00000000-0000-0000-0000-000000000000>
+        Width: 512
+        Height: 512
+  SourceHash: 70b3c317da064fea4a54503a431ee04d
+  FileHash: 2e983ca95dc93ff5ecb084d411c2f7a2
+  NativePackageItems:
+    []
