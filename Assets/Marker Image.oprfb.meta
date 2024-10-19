@@ -1,0 +1,127 @@
+- !<AssetImportMetadata/2604ad12-8cfd-4834-87ef-e700b2ca9db8>
+  ImportedAssetIds:
+    .hidden/Image 2.lsmat: !<reference> 1e5ead9a-a02d-4fe6-a3d5-11834b04db43
+    .hidden/Image 2.lsmat|Image 2.lsmat|GraphPassInfo: !<reference> e9c26845-b36e-4d10-b7c5-c023a8349acd
+    .hidden/Image 21.lsmat: !<reference> 932c4820-ee5f-49f9-a0e6-420b089cd4eb
+    .hidden/Textures/Image 2.png: !<reference> 19ba555f-0ab4-4927-bb0d-d8822286d4a6
+    2f7344a2ef82c355: !<reference> e8707898-221c-4906-a0b4-a7bfd5ad3cde
+    8a69b5ab42856a56: !<reference> 3ee702ba-2d35-4397-bbd0-e740523c633a
+    Marker Resources/Scripts/ImageTrackingController: !<reference> ce66bc9c-3356-46c7-bc9a-a8cdbc57ac70
+    "Marker Resources/image_marker [EDIT_ME]": !<reference> 6760f891-cd87-4722-b905-38fe5a954bf7
+    Marker_Image_PUT_UNDER_MAIN_CAM: !<reference> bf68b940-bf01-4ee5-b636-fa9c961d4d2e
+    c54d65af8595eaae: !<reference> 2939f71a-c283-4faa-912d-5e892edec826
+    c73fcf5ed99493d2: !<reference> 2a365321-44bb-474a-b207-345e49277fde
+    fbcf2109e6153360: !<reference> 13986c38-f387-4569-85ad-aec09e65ece8
+    image: !<reference> c35e09a1-0901-453d-b185-6059c96ed755
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> bf68b940-bf01-4ee5-b636-fa9c961d4d2e
+  PackageType: LegacyPackage
+  PackagePolicy: ShouldBeUnpacked
+  AssetDataMap:
+    Marker_Image_PUT_UNDER_MAIN_CAM: !<own> aaf734f3-41c8-4068-b10c-c038516f70f8
+  DependentFiles:
+    []
+  ImporterSettings: !<LensCoreImporterSettings/e622e87f-48a9-4f72-8940-ba7b7303bf29>
+    PersistentIdGenerationAlgorithm: DescriptorBased
+  CompressionSettings: !<ComplexCompressionSettings/ae052dd9-90b1-4e46-92e5-48ae1d8eb038>
+    Presets:
+      None Compression: !<SingleCompressionSettings/0ffc4c6a-fcda-468f-9c7f-b5ae4a04ecc2>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+    ExtensionMappings:
+      jpg: None Compression
+      png: None Compression
+    Overrides:
+      {}
+- !<ObjectPrefab/13851a48-a6c0-47a6-8457-3718b2a8dd95>
+  PackagePath: Marker_Image_PUT_UNDER_MAIN_CAM
+  objects:
+    - !<own> 8663b414-f55e-4f0e-a249-62fd4afe898b
+  LazyLoading: false
+  RetainAssets: true
+- !<MarkerTrackingComponent/4d1f7f7e-81ac-4c52-b537-fc8b8df1f350>
+  PrefabRemaps:
+    []
+  Name: Marker Tracking
+  Enabled: true
+  Marker: !<reference> 6760f891-cd87-4722-b905-38fe5a954bf7
+- !<ScriptComponent/501afc4a-8aaf-4f73-9079-b863ee2768da>
+  PrefabRemaps:
+    []
+  Name: ImageTrackingController
+  Enabled: true
+  ScriptAsset: !<reference> ce66bc9c-3356-46c7-bc9a-a8cdbc57ac70
+  ScriptInputsDefault:
+    onMarkerFoundGlobalBehaviors: true
+    onMarkerLostGlobalBehaviors: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      markerTrackingComponent: !<reference.MarkerTrackingComponent> 4d1f7f7e-81ac-4c52-b537-fc8b8df1f350
+      resizeObjectArray: !<reference.SceneObject[]>
+        - !<reference> cb731047-f391-44d2-9fb0-a0fce6a376ca
+      sendTriggers: true
+      onMarkerFoundGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+      onMarkerLostGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/8663b414-f55e-4f0e-a249-62fd4afe898b>
+  PrefabRemaps:
+    []
+  Name: Marker_Image_PUT_UNDER_MAIN_CAM
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> cb731047-f391-44d2-9fb0-a0fce6a376ca
+  Components:
+    - !<own> 4d1f7f7e-81ac-4c52-b537-fc8b8df1f350
+    - !<own> 501afc4a-8aaf-4f73-9079-b863ee2768da
+- !<Image/9e40c349-886e-46c3-9625-f29c2cb8f75b>
+  PrefabRemaps:
+    []
+  Name: Image 2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 1e5ead9a-a02d-4fe6-a3d5-11834b04db43
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+- !<ObjectPrefabAssetData/aaf734f3-41c8-4068-b10c-c038516f70f8>
+  SourceRemaps:
+    - 13986c38-f387-4569-85ad-aec09e65ece8: cb731047-f391-44d2-9fb0-a0fce6a376ca
+    - 2939f71a-c283-4faa-912d-5e892edec826: 8663b414-f55e-4f0e-a249-62fd4afe898b
+    - 2a365321-44bb-474a-b207-345e49277fde: 501afc4a-8aaf-4f73-9079-b863ee2768da
+    - 3ee702ba-2d35-4397-bbd0-e740523c633a: 9e40c349-886e-46c3-9625-f29c2cb8f75b
+    - e8707898-221c-4906-a0b4-a7bfd5ad3cde: 4d1f7f7e-81ac-4c52-b537-fc8b8df1f350
+  SourceState: !<own> 13851a48-a6c0-47a6-8457-3718b2a8dd95
+- !<SceneObject/cb731047-f391-44d2-9fb0-a0fce6a376ca>
+  PrefabRemaps:
+    []
+  Name: "Tracked Image [REPLACE_ME]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9e40c349-886e-46c3-9625-f29c2cb8f75b

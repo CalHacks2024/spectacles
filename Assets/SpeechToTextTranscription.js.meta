@@ -24,11 +24,13 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    remoteServiceModule: false
     vmlModule: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
     - vmlModule: !<reference.VoiceMLModule> 00000000-0000-0000-0000-000000000000
+      remoteServiceModule: !<reference.RemoteServiceModule> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

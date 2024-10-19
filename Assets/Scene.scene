@@ -29,7 +29,8 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> 3eb297d4-8f73-40ab-a1d8-d276c2109dab
+    - !<own> 3b27bb7b-fa6e-4fba-98b3-3579ee07f3d0
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
     - !<own> e5553c8a-0b7e-4ef4-92d9-3e1318fb82c1
@@ -1256,7 +1257,7 @@
   PrefabRemaps:
     []
   Name: TranscriptionObject
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1300,6 +1301,12 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<MarkerTrackingComponent/16409476-515b-4e7e-a19f-1b764d478ec8>
+  PrefabRemaps:
+    []
+  Name: Marker Tracking
+  Enabled: true
+  Marker: !<reference> c444a29d-0da3-4a58-ac5e-600be2a8d8f9
 - !<RenderMeshVisual/16cfa86e-da32-44bf-8b17-ac3e729ec5f7>
   PrefabRemaps:
     []
@@ -1340,7 +1347,7 @@
     - e7eefbec-cd19-4994-8191-cf4067d47b42: b659d3df-1f54-4d1d-9bc7-6fecc00fe671
     - f4061a51-7c7f-4cfa-a638-5320a43eb9bd: 147b8681-0b62-4679-9138-decce2cdfb44
   Name: SurfaceDetection
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -1911,12 +1918,12 @@
     - f4bdcb59-1d7f-4287-8796-d37b4998f584: a19f4c18-5c68-4b0d-b085-870fff8b53fb
     - f7f94bd6-16f2-441a-b604-0b6446d47b99: 5f5db37d-40e7-4a26-bce0-39e15806a048
   Name: Kitty__ADD_TO_SCENE
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 0.050000, y: 0.050000, z: 0.050000}
+    rotation: {x: 180.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.500000, y: 0.500000, z: 0.500000}
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 1461e5ff-4ed6-45c1-be26-7bce59929dc7
@@ -2434,7 +2441,7 @@
   ShadowDensity: 1.000000
   Materials:
     - !<reference> 7f2ac327-2b1d-450e-a50c-577c29b7acd7
-  Text: 3D Text
+  Text: 3D Text2
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2847,7 +2854,6 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 1e081213-ac69-4331-8a1d-3223ba098eed
     - !<own> c3a89504-5413-470a-9855-6a3c9812c98a
   Components:
     []
@@ -3603,6 +3609,21 @@
     - !<own> db7a2de4-e0a0-4866-9396-e081b65c2013
   Components:
     []
+- !<SceneObject/3b27bb7b-fa6e-4fba-98b3-3579ee07f3d0>
+  PrefabRemaps:
+    []
+  Name: Snapcode Tracking
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.004898, y: 0.092184, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 57af9ce0-cd0e-407b-9956-e7a5da923086
 - !<SceneObject/3c3c2c04-dffe-4690-8d06-82a357359128>
   PrefabRemaps:
     []
@@ -3723,6 +3744,22 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/3eb297d4-8f73-40ab-a1d8-d276c2109dab>
+  PrefabRemaps:
+    []
+  Name: Image Tracking
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1e081213-ac69-4331-8a1d-3223ba098eed
+    - !<own> 9e64a7fc-7ea4-4297-8765-f820b5d578f7
+  Components:
+    - !<own> 16409476-515b-4e7e-a19f-1b764d478ec8
 - !<SceneObject/3ebfffdb-c116-40d1-831f-a9171950f41f>
   PrefabRemaps:
     []
@@ -4501,7 +4538,7 @@
   PrefabRemaps:
     []
   Name: AnotherScript
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -4566,7 +4603,7 @@
   PrefabRemaps:
     []
   Name: ColourPrefab
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: -15.600340, y: 11.799239, z: -49.188423}
@@ -4750,6 +4787,26 @@
     - !<own> 608cd68b-202b-4d11-bca1-6a71f3866a0e
   Components:
     []
+- !<RenderMeshVisual/5045c712-be1a-48e5-a2eb-6802d32ec69d>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 77731c65-3c99-469d-82d2-91ee1f69575c
+  Mesh: !<reference> e542623c-1432-4bfa-881d-a28905bd9e57
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<SceneObject/505b4443-7f55-4928-90ab-86e27fb0fa97>
   PrefabRemaps:
     []
@@ -5219,6 +5276,12 @@
     - !<own> 84e5053a-1d61-4d37-887f-e4d7a10b17e9
     - !<own> 415e29e7-3562-4740-a616-f8adae95d2f3
     - !<own> 722d84a6-169a-4b3d-a104-fb2b2ce2388d
+- !<MarkerTrackingComponent/57af9ce0-cd0e-407b-9956-e7a5da923086>
+  PrefabRemaps:
+    []
+  Name: Marker Tracking
+  Enabled: true
+  Marker: !<reference> 34a0c5b0-6dca-4cb5-9bd8-5310424a9912
 - !<SceneObject/58e28251-fb65-445c-bbb6-9c535567026e>
   PrefabRemaps:
     []
@@ -5256,6 +5319,7 @@
     - 01b623e1-a554-4042-aef1-215456074466: a3ea9674-f669-4b67-834d-a0e4e7a3d286
     - 03142dbd-a09e-4262-a111-19e44ac744e3: 8e635d88-9a0d-4a5d-9f36-9c7bc7dec824
     - 03f88991-e65e-409c-b92e-e6dc25f33d50: d0a51677-5ad8-48aa-8d58-90d50ab0fbb0
+    - 069bf56e-8b1a-4b4b-b681-19ecf7d287d7: 22a6c235-0b8d-4f51-9b18-a7784338d98a
     - 06ba1261-3a2b-4dde-af0a-10377f085a2f: eb5ffc5e-1cfe-4aa8-8edc-4bd795ce8376
     - 06bdb19d-ee4b-4d26-bb74-9cfea8886f9b: ff859080-0ed7-42dd-8df4-a148e3c81415
     - 081078a7-4af8-41d2-b6a4-cec00f22774e: 6d51f68b-b97f-48cc-9d76-5785b39bece8
@@ -5305,6 +5369,7 @@
     - 26267b30-d01b-4816-a477-43a17e45196c: f7b4356a-92f9-4310-a686-6303c00ca52c
     - 26c3f36e-7ea3-475c-ae36-874c1ed899dc: c552cfce-93ed-4c64-81c8-5918bc273fd1
     - 280161fc-ecfa-45e5-9209-d2f7c3ce3411: 5c3f4440-60a4-4c5f-8715-1e7603a98677
+    - 2885e61d-b31f-436c-b593-36478bc41c24: 17077246-84cf-4cdc-b283-8243b420661a
     - 292287d6-33bc-4543-bddf-c0366b07c59a: 6158844c-2de2-47af-9c81-12c2396f14ab
     - 293f8dcf-2058-4d37-8756-3122f5c0b3b4: d3fe039a-8aae-41db-a9a7-a8613bfec849
     - 2a30125f-13fc-4b98-b43f-cdf599c2ede0: 7db44122-6bd4-42bf-a3c8-a548fedf722d
@@ -5325,6 +5390,7 @@
     - 33735641-6061-4c01-a86c-362dca42fe6d: 8856983b-db92-4f0e-a3a7-b62154b75ec0
     - 33f2323e-ce43-4d4f-9b50-693664211100: 1442c1e3-b9a6-40a0-bc13-5837474f2248
     - 3467eb3a-eedc-43de-80d3-393de148ecb3: 97104b46-e4b0-49ba-bed1-364c416eddda
+    - 3502c72c-2896-4b5f-b010-41be6a9d6f80: d0532c45-02c2-409a-9026-6961961549d4
     - 35cbf71c-ed0e-46d5-b668-09ab98fe1696: c154320c-18cc-4401-8b30-05c289bedb8a
     - 35db4f37-abd2-4c29-b0e2-b417d07d37b6: 6b025f06-9ce3-41ed-bc7b-e3cd20762d1b
     - 35e41611-d89b-493c-9e0b-c7bb5d429e16: 254b9e85-b5d1-400f-8c84-83dd52f95100
@@ -5332,6 +5398,7 @@
     - 373af63e-e1a9-498f-a0b6-882b209158f0: 48a9379f-fd55-4421-a0c5-8ac5925d9c8a
     - 37f14aee-0e3e-4661-bd65-385111c466e7: a7afe982-1bbd-4259-93ac-64f0b9e2e60f
     - 37f803dd-500a-4295-b889-2608e1872e55: 6ec0ec25-509f-46af-ae53-60edb6fbb7f3
+    - 384cb8b5-9069-416c-9d1d-99f32ae3b946: 159ff334-ebf5-47b6-8d4c-f405c6a50a33
     - 3a8e4b65-b785-4f04-9699-fdb009c0b2fa: dfa95e7e-64fb-4020-8444-8022e0d510a6
     - 3ae72907-82ea-4dfb-a949-8250e879b051: b9a90467-10b9-4041-b988-c1e615a17cb3
     - 3d1053b6-58f6-4f01-bf21-3a9fe73d338c: 34c92e27-4c85-440a-bdf3-52d7aef59d1c
@@ -5366,6 +5433,7 @@
     - 4e9e9b21-f4d8-45d4-b679-f13bfca2a719: 5c919bfd-420e-4da8-8ef6-86c642883fe8
     - 4ed00208-0d3e-44fa-88ba-465ed4141ad0: 6bb00e6d-1adf-462a-ae6c-39bc86fc660a
     - 4f3ab5e1-d141-4e2e-a44b-616807117d92: b9d14d3a-7945-428c-a768-41692c2eba14
+    - 4f8bb5f0-422a-4cb3-9845-46c808c9a18e: dba77140-7bf4-4c71-aea1-f5397999e3ab
     - 4ffd2039-f59b-4a33-9267-4051dc92ace3: b92e7c34-d016-4929-94af-9b325dfef94c
     - 505b4443-7f55-4928-90ab-86e27fb0fa97: 1ff24423-e2c4-43dd-922e-71a93eaf6518
     - 518a56fe-84cc-457a-ac44-665f19946cf7: 418497a2-9aff-40a5-b23e-17528512f09d
@@ -5422,6 +5490,7 @@
     - 75668a99-1d60-4ef6-bbdf-d1b11eb40477: 5cdd7274-cc6b-4308-acd1-eca7141ce41d
     - 7692d1fc-6ab8-4f1a-bc6c-9909d0b2f09b: dbb15efd-eddd-45ff-917d-5b143092a640
     - 7975bed7-527e-4086-b3d6-af250effa0ae: 5108b158-1992-4fd3-a4de-e59d1ab57470
+    - 798fb029-840e-4007-895b-12bb9d40cc3b: 05ee86e8-aef3-4ebe-a8b2-3ed15489bffe
     - 79f133d3-5281-4b2f-aeae-3da9498768c8: 95af3b28-6f17-49e5-80c3-e8a9c88ee332
     - 7a9b9130-4a06-4954-9b02-bb51cb83ef1a: a53b5990-7f09-4804-a3ac-d5306340a40d
     - 7abd0c40-1c63-4eba-a352-fe27f6e117e6: e1a7d336-27f8-45fc-8cc1-fbc62d284736
@@ -5442,6 +5511,7 @@
     - 80ba093e-5be8-442f-8fd8-52bd21568734: 9d583df5-3ee0-438d-8993-db565f83e2c2
     - 82d6634f-fe20-48fa-a4e2-3b27bb4c1fd5: bda630b7-a265-4288-824f-963be91e4932
     - 8325db5a-76dc-4926-91b6-79b3e0f2fa42: 51174a7a-e134-4710-ad32-d2ca2c058919
+    - 8359f01b-1be9-45fa-99c3-8e01c1df8d8b: a5232021-e32d-418f-a817-72ad591ba010
     - 8420a5d9-33e8-484f-902a-adf342d0cf30: 89b8d96b-b23a-4c1d-9afd-ea5ada766330
     - 849935d2-c727-4268-ac8d-efd4bb9357e9: 9149c36c-4fcf-4c64-be4a-2837b046580b
     - 84e5053a-1d61-4d37-887f-e4d7a10b17e9: 2e1d8a19-b3a3-419d-9a5d-f73d24b5c084
@@ -5486,6 +5556,7 @@
     - a1934755-c496-4664-a0cc-3297ba9e214a: 4167be1e-9c2e-42e2-8194-0ce075d83fdf
     - a2d33456-23a8-4d52-a873-44ab2ec408c0: b50d0664-596f-4bd5-9d00-f8f4d7e27a90
     - a2e6a10e-f0ac-4096-9ef7-b72730da36e4: 44d3ae72-34ce-490d-97d1-811ee37f1a40
+    - a41aff48-e040-4ad1-a744-f27b0459e15a: b71c1f3b-fc07-43fe-b916-5d5d84d57076
     - a57a7ca3-e822-4148-855b-96a8a55a5b94: ece0e61b-8a2a-4a87-98e5-012e0d7f11ad
     - a677b29a-6a93-490a-8df1-19b2ca301293: ed08613e-6299-4ffa-8c66-4b69e7e2890a
     - a694805f-1b38-4332-a2d4-461f08b15870: c7fc765f-3e34-42ed-b79c-d0d0f19dfd37
@@ -5543,6 +5614,7 @@
     - c959b5a2-b4e9-4db9-804c-41f352c4979b: c99ee9c2-c940-4c10-9c00-6df31f99c027
     - c9daef67-b20d-4951-854b-0ca416173aa8: b9de6ed0-0265-41c4-9d31-5ce92c77d45c
     - cb3a4816-b190-4dc0-ab2c-1ed4d19b25e4: 37ea4d65-f8aa-4326-8462-0a210b2914da
+    - cb8e76af-ae0a-4101-96d9-1df426eba2d6: d3d69bb9-1ebb-452c-b6eb-6c84316444df
     - cbee3731-e467-49d2-b637-2b9294830fe5: 3f51b949-5017-44c8-9dff-fdd46f91e149
     - cc073531-73ae-449d-b459-9c77359446ca: 45ddc26d-8076-436c-86a7-4864751e3270
     - cc634e2a-7e14-4b51-9848-5722d81b6215: 65f9c0a0-4e24-46ac-907a-63bc4bd3e346
@@ -5577,6 +5649,7 @@
     - e3d816f1-5387-4330-97d5-d1dd93d2d83c: b5dbf0b2-fc60-44b9-be4f-d0245c20ad4b
     - e3e87a68-bdfd-4f15-b705-f3a1e18ba139: 37ec1394-a182-40c6-99db-9d806163a9a3
     - e3ee4ab7-7298-4b77-85cf-9807f8ae3509: 61455789-a6aa-4684-a097-8e96f4b798fa
+    - e42bf403-7910-45fd-a3f8-d49e91124ed7: f7a3ae17-328e-4410-8cdb-02d9aa2cb359
     - e5d9f198-2c0a-4b4c-8626-df0b5e689957: fb5d4bbb-0811-4615-adb7-6e836504e7fe
     - e6190b84-f3db-4e80-9620-f3a1af760bb7: 4dc636dc-4a6d-4b8f-8461-3a0da28a79d1
     - e743c9bb-f45d-40d6-b7b0-40f7af3a9e18: d2fbbe47-d72e-4471-a1f1-02ffbcbe9212
@@ -5604,6 +5677,7 @@
     - f0b156d5-a045-452b-b09c-e64aece75d70: 6ec80adf-d2b1-4efb-bdb8-977c622a1e6b
     - f2bb482b-aad7-40f0-bb34-67d0c8ba15e9: ad36bd15-0d0d-49b2-a712-033b99866b14
     - f2f4d20a-68c7-4e43-87cc-f7d35fd6a121: 0f9f7198-1efe-43b3-9b7c-b3cc33128b40
+    - f408ea3a-bcbf-4ef3-8dbc-a60b1e82745c: 9504c0a1-60c3-479d-b077-221710d11546
     - f4a2fd4b-8f37-4f61-b2b0-44e9b6f31be8: 11238b93-2ff1-4579-8424-c8efa3aa5c94
     - f4cdaf94-e90f-420b-92d6-51adbe6ca4f0: 11ec1151-f8f3-458e-a5ae-a56ca8367d11
     - f52a613f-770c-4de6-9de0-ed55b90d5cd5: e5f5a9b5-8c25-4543-8704-b054151e7f27
@@ -5627,6 +5701,7 @@
     - ff9e0a86-595c-49b9-84fd-e9010ba679d5: d6964d43-a613-4cde-8ad2-3b2b0b4b4f30
     - ffab42e8-a2aa-4874-b96e-e685694d4ab7: e8c009db-90f8-4555-8449-0ee1a350eb75
     - ffe425e3-557d-4e1d-824c-e5f378f4a39e: e3ec5982-f5aa-45f3-baae-b2c56d5e0bcd
+    - fff62505-afa5-4d37-ba0b-76ecbeba2ea3: 226d15b4-a869-40df-a264-feca26b3d7db
   Name: SpectaclesInteractionKit
   Enabled: true
   Layers: 1
@@ -5855,7 +5930,7 @@
   PrefabRemaps:
     []
   Name: "[EXAMPLES] UI"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -6553,7 +6628,7 @@
   PrefabRemaps:
     []
   Name: TestWorkshop
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -7699,8 +7774,8 @@
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: -2.021101}
+    scale: {x: 0.990000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -9264,6 +9339,21 @@
     - !<own> 60f030ca-7f63-41ff-90f6-217ae9d80427
   Components:
     []
+- !<SceneObject/9e64a7fc-7ea4-4297-8765-f820b5d578f7>
+  PrefabRemaps:
+    []
+  Name: Box
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5045c712-be1a-48e5-a2eb-6802d32ec69d
 - !<SceneObject/9ec97033-a73e-431a-810d-7cefb332d2bd>
   PrefabRemaps:
     []
@@ -10844,12 +10934,13 @@
   Enabled: true
   ScriptAsset: !<reference> 25f6acfe-cbb6-4abc-a84b-59bc2aa53e4b
   ScriptInputsDefault:
-    {}
+    remoteServiceModule: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       vmlModule: !<reference.VoiceMLModule> 1aaae9a6-98c8-4a6e-a0ca-c655823468fd
+      remoteServiceModule: !<reference.RemoteServiceModule> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -11393,7 +11484,7 @@
     - fdacab19-5635-4d00-b881-b57f225fd5ef: 8ba57965-70d0-43b1-83b2-33a4e649b163
     - ff342c15-c849-4259-974f-c9a804a82f3a: 56f135d0-5243-4e22-8f0c-4ac5de38fc21
   Name: Body_Mesh_With_Skeleton__PLACE_IN_OBJECTS_PANEL
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: -22.221050}
@@ -12840,7 +12931,7 @@
     []
   Name: Device Tracking
   Enabled: true
-  DeviceTrackingMode: Rotation
+  DeviceTrackingMode: World
   RotationOptions: !<RotationOptions/00000000-0000-0000-0000-000000000000>
     InvertRotation: false
   SurfaceOptions: !<SurfaceOptions/00000000-0000-0000-0000-000000000000>

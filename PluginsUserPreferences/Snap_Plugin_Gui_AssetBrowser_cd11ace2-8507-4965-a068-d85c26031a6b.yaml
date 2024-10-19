@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 448
+    size: 466
     values:
       - AnotherScript.js
       - Base.png
@@ -63,12 +63,21 @@ CollapsedEntities:
       - Kitty/Resources/Textures/cat_base_02.pvr
       - Kitty/Resources/Textures/cat_normal_02.pvr
       - Kitty/Resources/Textures/cat_param_02.pvr
+      - Marker Image.oprfb/.hidden
+      - Marker Image.oprfb/.hidden/Image 2.lsmat
+      - Marker Image.oprfb/.hidden/Image 21.lsmat
+      - Marker Image.oprfb/.hidden/Textures
+      - Marker Image.oprfb/.hidden/Textures/Image 2.png
+      - Marker Image.oprfb/Marker Resources/Scripts
+      - Marker Image.oprfb/Marker Resources/Scripts/ImageTrackingController
+      - Marker Image.oprfb/image
       - MaterialParams.png
       - Normal.png
+      - PBR 1.mat
       - PBR.mat
+      - Remote Service Module.remoteServiceModule
       - Render Target.renderTarget
       - Scene.scene
-      - SpectaclesInteractionKit
       - SpectaclesInteractionKit/Assets
       - SpectaclesInteractionKit/Assets/Audio
       - SpectaclesInteractionKit/Assets/Audio/HoverAudioTrack.wav
@@ -151,6 +160,7 @@ CollapsedEntities:
       - SpectaclesInteractionKit/Assets/Textures/SIKContainerExampleImage.jpg
       - SpectaclesInteractionKit/Assets/Textures/SIKLogo.png
       - SpectaclesInteractionKit/Assets/Textures/ScrollBarRectangle.png
+      - SpectaclesInteractionKit/Components
       - SpectaclesInteractionKit/Components/Helpers
       - SpectaclesInteractionKit/Components/Helpers/CapsuleMeshCustomizer.ts
       - SpectaclesInteractionKit/Components/Helpers/InteractableAudioFeedback.ts
@@ -160,11 +170,14 @@ CollapsedEntities:
       - SpectaclesInteractionKit/Components/Helpers/ScreenTransformAdapter.ts
       - SpectaclesInteractionKit/Components/Helpers/SliderFeedback.ts
       - SpectaclesInteractionKit/Components/Helpers/ToggleFeedback.ts
+      - SpectaclesInteractionKit/Components/Interaction
       - SpectaclesInteractionKit/Components/Interaction/Billboard
       - SpectaclesInteractionKit/Components/Interaction/Billboard/Billboard.ts
       - SpectaclesInteractionKit/Components/Interaction/Billboard/BillboardController.ts
       - SpectaclesInteractionKit/Components/Interaction/Billboard/BillboardRotationCalculator.ts
+      - SpectaclesInteractionKit/Components/Interaction/HandVisual
       - SpectaclesInteractionKit/Components/Interaction/HandVisual/GlowEffectView.ts
+      - SpectaclesInteractionKit/Components/Interaction/HandVisual/GlowEffectViewModel.ts
       - SpectaclesInteractionKit/Components/Interaction/HandVisual/HandVisual.ts
       - SpectaclesInteractionKit/Components/Interaction/HandVisual/RadialOcclusionView.ts
       - SpectaclesInteractionKit/Components/Interaction/Headlock
@@ -311,14 +324,12 @@ CollapsedEntities:
       - SpectaclesInteractionKit/Prefabs
       - SpectaclesInteractionKit/Prefabs/ScrollViewListItem.prefab
       - SpectaclesInteractionKit/Prefabs/SpectaclesInteractionKit.prefab
-      - SpectaclesInteractionKit/Providers
       - SpectaclesInteractionKit/Providers/CameraProvider
       - SpectaclesInteractionKit/Providers/CameraProvider/BaseWorldCameraProvider.ts
       - SpectaclesInteractionKit/Providers/CameraProvider/CameraProvider.ts
       - SpectaclesInteractionKit/Providers/CameraProvider/WorldCameraFinderProvider.ts
       - SpectaclesInteractionKit/Providers/CursorControllerProvider
       - SpectaclesInteractionKit/Providers/CursorControllerProvider/CursorControllerProvider.ts
-      - SpectaclesInteractionKit/Providers/HandInputData
       - SpectaclesInteractionKit/Providers/HandInputData/BaseHand.ts
       - SpectaclesInteractionKit/Providers/HandInputData/DefaultHandTrackingAssetProvider.ts
       - SpectaclesInteractionKit/Providers/HandInputData/GestureProvider
@@ -342,7 +353,6 @@ CollapsedEntities:
       - SpectaclesInteractionKit/Providers/HandInputData/HandVisuals.ts
       - SpectaclesInteractionKit/Providers/HandInputData/Joints.ts
       - SpectaclesInteractionKit/Providers/HandInputData/Keypoint.ts
-      - SpectaclesInteractionKit/Providers/HandInputData/LandmarkNames.ts
       - SpectaclesInteractionKit/Providers/HandInputData/LeftHandAsset.handTracking3D
       - SpectaclesInteractionKit/Providers/HandInputData/RightHandAsset.handTracking3D
       - SpectaclesInteractionKit/Providers/HandInputData/TargetingData.ts
@@ -393,6 +403,7 @@ CollapsedEntities:
       - SpectaclesInteractionKit/Utils/views/MeshView.ts
       - SpectaclesInteractionKit/Utils/views/View.ts
       - SpectaclesInteractionKit/package.native
+      - Speech Recognition.lspkg
       - Speech Recognition.lspkg/Fonts
       - Speech Recognition.lspkg/Fonts/Urbanist-VariableFont_wght.ttf
       - "Speech Recognition.lspkg/Info Card [DELETE_ME]"
@@ -446,9 +457,16 @@ CollapsedEntities:
       - Surface Detection.lspkg/Textures
       - Surface Detection.lspkg/Textures/groundIcon.png
       - Surface Detection.lspkg/package.native
+      - TestWorkshop.js
+      - Text3D 1.mat
+      - Text3D 2.mat
+      - Text3D.mat
       - VoiceML Module.voiceMLModule
+      - colour.json
       - flat.ss_graph
       - image_unlit.ss_graph
       - onSpeechRecognize2.js
+      - pbr 1.ss_graph
       - pbr.ss_graph
+      - text_3d.ss_graph
   options: 4
