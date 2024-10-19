@@ -59,3 +59,5 @@ export class PinchButton extends BaseScriptComponent {
       }
   }
 }
+
+
