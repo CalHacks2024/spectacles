@@ -45,8 +45,7 @@ export class PinchButton extends BaseScriptComponent {
               try {
                   if (this.enabled) {
                       this.onButtonPinchedEvent.invoke(interactorEvent);
-                        
-                      print('PINCH BUTTON WAS CLICKED');
+//                      print('PINCH BUTTON WAS CLICKED');
                   }
               } catch (e) {
                   this.log.e('Error invoking onButtonPinchedEvent!');
