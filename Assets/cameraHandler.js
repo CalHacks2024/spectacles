@@ -2,55 +2,69 @@
 //@input SceneObject CameraButton
 //@input Component.Text3D textComponent {"label": "Button Text"}
 //@input Component.Image ImageComponent
+//@input SceneObject TakePhotoButton
+//@input Asset.ObjectPrefab myPrefab
+
 
 const SIK = require('SpectaclesInteractionKit/SIK').SIK;
 let cameraModule = require('LensStudio:CameraModule');
-
 const interactionConfiguration = SIK.InteractionConfiguration;
+let cameraTexture = null
 
 script.createEvent("OnStartEvent").bind(function() {
     print("gang shit")
     let cameraRequest = CameraModule.createCameraRequest();
     cameraRequest.id = CameraModule.CameraId.Left_Color;
     
-    let cameraTexture = cameraModule.requestCamera(cameraRequest);  
+    cameraTexture = cameraModule.requestCamera(cameraRequest);  
     script.ImageComponent.mainPass.baseTex = cameraTexture
 })
 
-// function onAwake() {
-//     // Wait for other components to initialize by deferring to OnStartEvent.
-//     script.createEvent('OnStartEvent').bind(() => {
-//         onStart();
-//     });
-// }
+function onAwake() {
+    // Wait for other components to initialize by deferring to OnStartEvent.
+    script.createEvent('OnStartEvent').bind(() => {
+        onStart();
+    });
+}
 
-// function takePicture() {
-//     print("Picture Taken!")
-//     let cameraRequest = cameraModule.createCameraRequest();
-//     cameraRequest.cameraId = cameraModule.CameraId.Left_Color;
+function takePicture() {
+    print("Picture Taken!")
+    let instanceObject = script.myPrefab.instantiate(script.getSceneObject());
+    let onNewFrame = cameraTexture.control.onNewFrame;
+    let registration = onNewFrame.add((frame) => {
+        onNewFrame.remove(registration)
 
-//     let cameraTexture = cameraModule.requestCamera(cameraRequest);
-//     script.ImageComponent.mainPass.baseTex = cameraTexture
+        const width = cameraTexture.getWidth() // 1008
+        const height = cameraTexture.getHeight() // 756
+        const readableTexture = ProceduralTextureProvider.createFromTexture(cameraTexture)
+        const readableProvider = readableTexture.control
+        const data = new Uint8Array(width * height * 4)
+        readableProvider.getPixels(0, 0, width, height, data)
 
-//     let onNewFrame = cameraTexture.control.onNewFrame;
-//     let registration = onNewFrame.add((frame) => {
-//         // Process the frame
-//     });
+        instanceObject.getComponent("Image").mainPass.baseTex = readableTexture
+    });
 
-//     script.onStop.add(() => onNewFrame.remove(registration));
-// }
+}
 
-// function onStart() {
-//     // This script assumes that a ToggleButton (and Interactable + Collider) component have already been instantiated on the SceneObject.
-//     var pinchButton = script.CameraButton.getComponent(
-//         interactionConfiguration.requireType('PinchButton')
-//     );
+
+
+
+
+function onStart() {
+    // This script assumes that a ToggleButton (and Interactable + Collider) component have already been instantiated on the SceneObject.
+    var pinchButton = script.TakePhotoButton.getComponent(
+        interactionConfiguration.requireType('PinchButton')
+    );
   
-//     var onStateChangedCallback = () => {
-//         takePicture();
-//     };
+    var onStateChangedCallback = () => {
+        try {
+            takePicture();
+        } catch(e){
+            print(e)
+        }
+    };
     
-//     pinchButton.onButtonPinched.add(onStateChangedCallback);
-// }
+    pinchButton.onButtonPinched.add(onStateChangedCallback);
+}
   
-// onAwake();
+onAwake();

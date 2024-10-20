@@ -1,16 +1,25 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 413
+    size: 435
     values:
       - AnotherScript.js
       - Base.png
+      - Cylinder.mesh
       - Device Camera Texture.deviceCameraTexture
       - Echopark.hdr
       - Echopark.hdr/Diffuse
       - Echopark.hdr/Specular
+      - Generative 3D Component 1.lsc
+      - Generative 3D Component 2.lsc
+      - Generative 3D Component 3.lsc
+      - Generative 3D Component.lsc
+      - Image 1.mat
       - Image 2.mat
       - Image 3.mat
+      - Image 4.mat
+      - Image 5.mat
+      - Image 6.mat
       - Image.mat
       - Image.png
       - Images
@@ -35,16 +44,26 @@ CollapsedEntities:
       - MaterialParams.png
       - Normal.png
       - PBR 1.mat
+      - PBR 10.mat
+      - PBR 2.mat
+      - PBR 3.mat
+      - PBR 4.mat
+      - PBR 5.mat
+      - PBR 6.mat
       - PBR 7.mat
       - PBR 8.mat
+      - PBR 9.mat
       - PBR.mat
       - Remote Service Module.remoteServiceModule
       - Render Target.renderTarget
       - Scene.scene
+      - SpectaclesInteractionKit
+      - SpectaclesInteractionKit/Assets
       - SpectaclesInteractionKit/Assets/Audio
       - SpectaclesInteractionKit/Assets/Audio/HoverAudioTrack.wav
       - SpectaclesInteractionKit/Assets/Audio/TriggerEndAudioTrack.wav
       - SpectaclesInteractionKit/Assets/Audio/TriggerStartAudioTrack.wav
+      - SpectaclesInteractionKit/Assets/Materials
       - SpectaclesInteractionKit/Assets/Materials/BaseHandVisualsMaterials
       - SpectaclesInteractionKit/Assets/Materials/BaseHandVisualsMaterials/PaintedGlow_Left.mat
       - SpectaclesInteractionKit/Assets/Materials/BaseHandVisualsMaterials/PaintedGlow_Right.mat
@@ -403,15 +422,18 @@ CollapsedEntities:
       - Text3D.mat
       - Untitled JavaScript 1.js
       - Untitled JavaScript.js
+      - VoiceML Module.voiceMLModule
       - World Mesh.worldmesh
       - cameraHandler.js
       - colour.json
+      - flat 1.ss_graph
       - flat.ss_graph
       - image_unlit.ss_graph
       - marker1.jpg
       - marker2.png
       - onSpeechRecognize2.js
       - pbr 1.ss_graph
+      - pbr 2.ss_graph
       - pbr.ss_graph
       - pngtree-clipboard-vector-png-image_4878692.jpg
       - text_3d 1.ss_graph

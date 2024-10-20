@@ -26,6 +26,8 @@
   ScriptInputsHidden:
     CameraButton: false
     ImageComponent: false
+    TakePhotoButton: false
+    myPrefab: false
     remoteServiceModule: false
     textComponent: false
   ScriptTypesHidden:
@@ -35,6 +37,8 @@
       CameraButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       textComponent: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
       ImageComponent: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      TakePhotoButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      myPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

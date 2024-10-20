@@ -1,0 +1,142 @@
+- !<AssetImportMetadata/1d35dddc-47d7-42e3-90a4-30f52cf74e31>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> aa07552e-d5b6-44ba-b8b2-a01e553dc61b
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> aa07552e-d5b6-44ba-b8b2-a01e553dc61b
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 38b77f7c-14db-4e89-8e3f-1891db6f4ace
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/b1c9e87e-5983-4e2a-a518-a0d0d60065e7>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/38b77f7c-14db-4e89-8e3f-1891db6f4ace>
+  SourceRemaps:
+    - 0e8c2144-bdbe-4aa3-8621-25d0f2ea1f80: 52216bc9-df92-44a9-93f4-3ce4abf1872a
+    - 39f6da84-fe50-44f9-bf3d-9e1f090a7d6c: beab1359-c2ff-4f6d-afd0-1f46a33274d1
+    - 41315d57-66e3-4699-8636-60e2d52f4a95: 99d7f0db-6369-4e74-b0b8-1cb958fd644c
+    - 964b484e-7c8a-4676-a916-fe09fcd15c79: c93893f7-01b7-41f4-8cde-b1ddeab1d201
+    - b8aef790-519b-4ef3-8320-e281c9137946: dfbcd584-ee52-4e95-8242-5573c8a54db9
+  SourceState: !<own> 64bc9b0f-6fc4-411a-9c37-f95db26cf4fc
+- !<SceneObject/52216bc9-df92-44a9-93f4-3ce4abf1872a>
+  PrefabRemaps:
+    []
+  Name: PhotoFrame
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -60.659096}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 99d7f0db-6369-4e74-b0b8-1cb958fd644c
+  Components:
+    - !<own> beab1359-c2ff-4f6d-afd0-1f46a33274d1
+    - !<own> dfbcd584-ee52-4e95-8242-5573c8a54db9
+- !<ObjectPrefab/64bc9b0f-6fc4-411a-9c37-f95db26cf4fc>
+  PackagePath: ""
+  objects:
+    - !<own> 52216bc9-df92-44a9-93f4-3ce4abf1872a
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/99d7f0db-6369-4e74-b0b8-1cb958fd644c>
+  PrefabRemaps:
+    []
+  Name: Photo
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 1.210194, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 32.000000, y: 32.000000, z: 32.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c93893f7-01b7-41f4-8cde-b1ddeab1d201
+- !<ScriptComponent/beab1359-c2ff-4f6d-afd0-1f46a33274d1>
+  PrefabRemaps:
+    []
+  Name: ContainerFrame
+  Enabled: true
+  ScriptAsset: !<reference> 94ea82ba-1d42-4617-b71f-c92262f5960b
+  ScriptInputsDefault:
+    worldCursor: true
+    innerSize: true
+    border: true
+    constantPadding: true
+    allowScaling: true
+    autoScaleContent: true
+    allowTranslation: true
+    xAlways: true
+    yAlways: true
+    worldSnapping: true
+    isFollowing: true
+    showCloseButton: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      worldCursor: !<MappingBased.CursorController> 00000000-0000-0000-0000-000000000000
+      autoShowHide: false
+      innerSize: !<Vec2> {x: 32.000000, y: 32.000000}
+      border: !<float> 4.000000
+      constantPadding: !<Vec2> {x: 0.000000, y: 0.000000}
+      allowScaling: true
+      autoScaleContent: true
+      isContentInteractable: true
+      allowTranslation: true
+      minimumSize: !<Vec2> {x: 8.000000, y: 8.000000}
+      maximumSize: !<Vec2> {x: 200.000000, y: 200.000000}
+      useBillboarding: true
+      xOnTranslate: true
+      xAlways: false
+      yOnTranslate: true
+      yAlways: false
+      useSnapping: true
+      itemSnapping: true
+      worldSnapping: false
+      showFollowButton: true
+      useFOVFollow: true
+      isFollowing: false
+      showCloseButton: true
+  ScriptTypes:
+    "":
+      {}
+- !<Image/c93893f7-01b7-41f4-8cde-b1ddeab1d201>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 60c005fa-c522-4efb-9ab0-b9e38c7a93dd
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+- !<Image/dfbcd584-ee52-4e95-8242-5573c8a54db9>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 60c005fa-c522-4efb-9ab0-b9e38c7a93dd
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}

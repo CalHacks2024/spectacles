@@ -24,7 +24,26 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    CameraButton: false
+    CameraWindow: false
+    HideButton: false
     StartRecordButton: false
+    WhiteBoard: false
+    Window1: false
+    Window1text: false
+    Window1title: false
+    Window2: false
+    Window2text: false
+    Window2title: false
+    Window3: false
+    Window3text: false
+    Window3title: false
+    Window4: false
+    Window4text: false
+    Window4title: false
+    Window5: false
+    Window5text: false
+    Window5title: false
     remoteServiceModule: false
     textComponent: false
     vmlModule: false
@@ -35,6 +54,25 @@
       remoteServiceModule: !<reference.RemoteServiceModule> 013a0fae-65f1-453a-b0cc-d7c1cc79230d
       StartRecordButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       textComponent: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      CameraButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      CameraWindow: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      HideButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      WhiteBoard: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Window1: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Window1text: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+      Window2: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Window2text: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+      Window3: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Window3text: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+      Window4: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Window4text: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+      Window5: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      Window5text: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+      Window1title: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      Window2title: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      Window3title: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      Window4title: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      Window5title: !<reference.Text> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
