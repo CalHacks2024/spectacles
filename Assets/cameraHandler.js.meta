@@ -1,0 +1,40 @@
+- !<AssetImportMetadata/85ff8050-d85c-40bc-b203-fffae2141efe>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> f70875ff-edde-4ecf-8f18-308b78dfc809
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> f70875ff-edde-4ecf-8f18-308b78dfc809
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 0ef9db4b-0e21-423f-9333-91d338946192
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/56b7d0ee-cc71-4a19-bf73-4df621f48c0e>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/0ef9db4b-0e21-423f-9333-91d338946192>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    CameraButton: false
+    ImageComponent: false
+    remoteServiceModule: false
+    textComponent: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - remoteServiceModule: !<reference.RemoteServiceModule> 00000000-0000-0000-0000-000000000000
+      CameraButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      textComponent: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+      ImageComponent: !<reference.Image> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

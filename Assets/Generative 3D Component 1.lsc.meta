@@ -1,0 +1,20 @@
+- !<AssetImportMetadata/728a3cc4-c7e9-4def-9d7d-44b394332c71>
+  ImportedAssetIds:
+    .hidden/Material: !<reference> 432896a9-3ba5-4b98-bfe2-d2e37b3141d8
+    Material: !<reference> 2e69bebc-a561-4c9c-abcd-a1da3cb22039
+    Material|Material|GraphPassInfo: !<reference> 2234a1c6-b946-437d-b060-c017fb7629e8
+    Meshes/model: !<reference> a74454fe-1ef4-48f0-90f7-e9a9c64fa40a
+    Textures/texture_kd: !<reference> 2aa49cb8-0e87-4ac7-8897-494df663062d
+    three_d_asset_plugin: !<reference> f1fb4310-26a1-4a19-8f16-c8333f45912d
+    white: !<reference> 4d7a5d99-8ff3-4bba-be85-24bc92250b48
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> f1fb4310-26a1-4a19-8f16-c8333f45912d
+  PackageType: LegacyPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<LensCoreImporterSettings/1e078c7e-ee1b-4eaa-8b7b-450328adc808>
+    PersistentIdGenerationAlgorithm: DescriptorBased
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000

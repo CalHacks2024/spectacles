@@ -2,5 +2,6 @@ ExternalSources:
   type: "std::map<Es::Uuid, Es::Path>"
   value:
     - 02050419-2a20-4abe-a5a1-4f4a90686b56: /Users/alanwang/Downloads/coffee shop.jpeg
+    - b23659e3-9a3c-4a97-b804-e1ce21fbcd7a: /Users/alanwang/Downloads/pngtree-clipboard-vector-png-image_4878692.jpg
     - df2dc285-0853-4e4d-a74d-b53a0a04983e: /Users/alanwang/Downloads/Screenshot 2024-08-06 at 3.25.05 PM.png
   options: 4

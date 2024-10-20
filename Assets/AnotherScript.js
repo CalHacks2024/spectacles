@@ -139,6 +139,12 @@ var exampleData = [
     { "color": "blue", "value": "#00f" }
 ];
 
+const examplePoints = [
+    {"point": "- My name is Alan"},
+    {"point": "- Adi is a wacky guy"},
+    {"point": "- Happy Halloween"}
+]
+
 function instantiateObjects(data) {
     if (!script.ColourPrefab) {
         print("Prefab template is not assigned!");
